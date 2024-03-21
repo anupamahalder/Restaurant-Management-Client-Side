@@ -1,16 +1,16 @@
-import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-
+import { GiChessQueen } from "react-icons/gi";
 const Banner = () => {
     const divStyle = 'h-[600px] mx-auto flex justify-center content-center relative';
     return (
-        <Carousel className='mx-auto'>
+        <Carousel className=''>
             <div className={divStyle}>
                 <img src="https://images.unsplash.com/photo-1622880833523-7cf1c0bd4296?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                 <div className='absolute bg-black/50 h-full w-full flex justify-center items-center'>
                     <div className='mt-20'>
-                    <h1 className='text-white text-6xl font-bold'>Welcome To <br /> <span className='text-yellow-400 text-8xl'>Cuisine Queen</span></h1>
+                    <h1 className='text-white text-6xl font-bold'>Welcome To<br /> <span className='text-yellow-400 text-8xl'>Cuisine Queen</span></h1>
+                    <GiChessQueen className='text-yellow-400 mx-auto text-5xl'></GiChessQueen>
                     <p className='bg-white font-bold text-xl mt-12'>Where Every Bite Tells a Story!</p>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import { GiChessQueen } from "react-icons/gi";
 
 const Navbar = () => {
     const navOptions =<>
@@ -31,7 +31,7 @@ const Navbar = () => {
                     <li><a>Item 3</a></li>
                 </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Cuisine Queen</a>
+                <a className="btn btn-ghost text-xl">Cuisine Queen <GiChessQueen></GiChessQueen></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

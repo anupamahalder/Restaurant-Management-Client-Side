@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode ,Pagination } from 'swiper/modules';
+import SectionTitle from '../../Shared/SectionTitle';
 
 const Category = () => {
   const [slidesPerView, setSlidesPerView] = useState(3);
@@ -34,7 +35,8 @@ const Category = () => {
     const imageStyle = 'h-[430px] mx-auto w-full';
     const nameStyle = 'text-3xl uppercase text-center -mt-10 bg-black absolute mx-auto text-white font-bold inline-block w-full bg-opacity-20';
     return (
-        <div className='p-4 md:p-0 my-10 md:w-5/6 mx-auto drop-shadow-lg bg-white'>
+        <div className='p-4 mb-10 md:mb-24 md:p-0 my-10 md:w-5/6 mx-auto bg-white'>
+          <SectionTitle heading={"Order Online"} subHeading={"From 11am to 10pm"}/>
         <Swiper
         slidesPerView={slidesPerView}
         spaceBetween={10}
@@ -43,7 +45,7 @@ const Category = () => {
           clickable: true,
         }}
         modules={[FreeMode, Pagination]}
-        className="mySwiper"
+        className="mySwiper drop-shadow-2xl"
       >
         <SwiperSlide>
             <img className={imageStyle} src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
