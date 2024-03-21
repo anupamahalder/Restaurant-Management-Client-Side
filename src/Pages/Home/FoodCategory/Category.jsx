@@ -34,7 +34,7 @@ const Category = () => {
     const imageStyle = 'h-[430px] mx-auto w-full';
     const nameStyle = 'text-3xl uppercase text-center -mt-10 bg-black absolute mx-auto text-white font-bold inline-block w-full bg-opacity-20';
     return (
-        <div className='p-4 md:p-0 mb-10 md:w-5/6 mx-auto drop-shadow-lg bg-white'>
+        <div className='p-4 md:p-0 my-10 md:w-5/6 mx-auto drop-shadow-lg bg-white'>
         <Swiper
         slidesPerView={slidesPerView}
         spaceBetween={10}
